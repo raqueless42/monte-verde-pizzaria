@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Pizzaria Monte Verde</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Pizzaria Monte Verde</h2>
+            <div class="toggle"></div>
+        </header>
+
+       <video src="video.mp4" muted loop autoplay></video> 
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Direto da Itália</h2>
+            <h3>Conheça o verdadeiro sabor de Nápoles</h3>
+            <p>Experimente a combinação da melhor mussarela italiana, o mais puro molho feito com tomates selecionados e <br>o sabor incrível de ingredientes cuidadosamentes selecionados para proporcionar uma experiência autêntica, direto da Itália.</p>
+            <a href="#">Peça já</a>
+        </div>
+
+        <u class="social">
+           <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+           <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+           <li><a href="#"><i class='bx bx-mail-send'></i></a></li>
+        </u>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pizzas</a></li>
+            <li><a href="#">Bebidas</a></li>
+            <li><a href="#">Combos</a></li>
+            <li><a href="#">Sobremesa</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
